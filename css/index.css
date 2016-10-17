@@ -1,7 +1,3 @@
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-
 body {
 	margin: 0; border: 0;
 }
@@ -17,31 +13,9 @@ body {
 	font-size: 2.5em;
 }
 
-#barra,
-#main {
-	width: 800px;
+#barra, #main {
+	width: 900px;
 	margin: auto;
-}
-
-#barra ul {
-	list-style-type: none;
-}
-
-#barra ul li {
-	display: inline-block;
-	color: black;
-	border-right: 1px solid #333;
-	padding: 10px 30px;
-}
-
-#barra ul li:first-child {
-	padding-left: 0;
-}
-
-a {
-	text-decoration: none;
-	color: #333;
-	cursor: pointer;
 }
 
 #main {
@@ -50,7 +24,53 @@ a {
 	box-shadow: 0 0 20px #999;
 }
 
+#barra ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+#barra ul li {
+	display: inline-block;
+	color: black;
+	border-right: 1px solid #333;
+	padding: 10px 30px;
+	transition: all .3s ease;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+
+#barra ul li:hover {
+	color: white;
+	background-color: #333;
+}
+
 .articulo {
 	padding: 28px;
 }
 
+.fotos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fotos div img{
+	max-width: 450px;
+}
+
+.effect {
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	opacity: 0;
+	transition: all .3s ease;
+	
+	font-size: 2em;
+}
+.aden:hover+.effect {
+	opacity: 1;
+}
