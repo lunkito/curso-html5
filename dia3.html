@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dia 3</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- JQUERY -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- COOKIES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.cookieBar/0.0.1/cookieBar.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cookieBar/0.0.1/jquery.cookieBar.min.js" charset="utf-8"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  	<!-- SLIDER -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <!-- BUTTONS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css">
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/js/buttons.min.js"></script>
+
+  	<!-- ACCORDION -->
+  	<link type="text/css" rel="stylesheet" href="https://rawgit.com/vctrfrnndz/jquery-accordion/master/css/jquery.accordion.css">
+  	<script src="https://rawgit.com/vctrfrnndz/jquery-accordion/master/js/jquery.accordion.js"></script>
+
+  	<!-- OUIBOUNCE -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js"></script>
+
+  	<!-- SweetAlert2 -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/5.3.3/sweetalert2.min.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/5.3.3/sweetalert2.min.js"></script>
+
+    <!-- AWESOMEMPLETE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.1/awesomplete.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.1/awesomplete.min.js"></script>
+
+    <!-- SELECTIZE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.default.min.css">
+
+    <!-- TRUMBOWYG -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.3.0/ui/icons.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.3.0/ui/trumbowyg.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.3.0/trumbowyg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.3.0/langs/es.min.js"></script>
+
+    <!-- QUILL -->
+    <link href="https://cdn.quilljs.com/1.1.0/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.1.0/quill.js"></script>
+
+    <!-- WAYPOINTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- MIO -->
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div id="header">Curso de HTML!</div>
+
+  	<div id="barra">
+  		<ul>
+  			<a href="index.html"> <li>Inicio</li> </a>
+  			<a href="dia1.html"> <li>Dia 1</li> </a>
+  			<a href="dia2.html"> <li>Dia 2</li> </a>
+  			<a href=""> <li>Dia 3</li> </a>
+  			<a href="dia4.html"> <li>Dia 4</li> </a>
+  			<a href="dia5.html"> <li>Dia 5</li> </a>
+  		</ul>
+  	</div>
+
+    <div id="main">
+      <!-- AWESOMEPLETE -->
+      <h2>Awesomplate</h2>
+      <label for="">Primer modo</label>
+      <input class="awesomplete" data-list="Auto, Autocompletar, Awesome, Much, Doge, WoW">
+      <br><br>
+
+      <label for="">Modo HTML5</label>
+      <input list="completar">
+      <datalist id="completar">
+        <option>Auto</option>
+        <option>Autocompletar</option>
+        <option>Awesome</option>
+        <option>Much</option>
+        <option>Doge</option>
+        <option>WoW</option>
+      </datalist>
+      <br><br>
+
+      <label for="">Con JS</label>
+      <input id="datos">
+      <br><br>
+
+      <!-- SELECTIZE -->
+      <input type="text" id="input-tags">
+      <br>
+
+      <!-- TRUMBOWYG -->
+      <h2>Trumbowyg</h2>
+      <div id="trumbowyg-demo" placeholder="Escribe aquí, pon imágenes..."></div>
+      <br>
+
+      <!-- QUILL -->
+      <h2>Quill</h2>
+      <div id="editor">
+
+      </div>
+
+    </div>
+
+    <!-- COOKIE -->
+    <div class="cookie-message">
+      <p>
+        Esta web usa cookies. Si sigue navegando acepta los términos
+        <a class="close" href="#">Cerrar</a>
+      </p>
+    </div>
+  </body>
+</html>
