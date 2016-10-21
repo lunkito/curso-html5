@@ -166,3 +166,80 @@ a {
 
 .cookie-message p { text-indent: 1.2em; color: #339ff0!important; }
 .cookie-message a { color: #339ff0!important; }
+
+/*DIA 4*/
+
+/*CHARTIST*/
+.chart, .chart2 {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
+
+.chart .ct-series-c path,
+.chart .ct-series-c line {
+	stroke: #0af;
+}
+
+/*JS SEQUENCE DIAGRAMS*/
+#diagram,
+#diagram1,
+#diagram2,
+#diagram3,
+#diagram4,
+#diagram5 {
+	display: inline-block;
+	margin: auto 20px;
+}
+
+/*GRAPHVIZ*/
+#graph svg { transform: translate(270px); }
+
+/*TABLESORT*/
+table { border-collapse: collapse; margin: auto;}
+thead { font-weight: bold; }
+tbody tr:nth-child(odd) { background-color: #ddd; }
+td, th {
+	border: 1px solid #ccc;
+	padding: 12px;
+}
+
+table th.sort-up::after {
+ content:"▲";
+}
+table th.sort-down::after {
+ content:"▼";
+}
+
+/*FLIP*/
+#card {
+	width: 640px;
+	height: 320px;
+	margin: 40px auto;
+	color: white;
+	font-size: 2.2em;
+	line-height: 320px;
+	text-align: center;
+}
+
+.front {
+	background-color: #5bf;
+	border: 16px solid white;
+	border-radius: 4px;
+	box-shadow: 0 0 12px #999;
+}
+.back {
+	background: url(../img/pexels-photo-29977.jpg);
+	border: 16px solid white;
+	border-radius: 4px;
+	box-shadow: 0 0 12px #999;
+}
+
+
+/*PANORAMA*/
+
+#photosphere {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
