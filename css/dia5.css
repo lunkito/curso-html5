@@ -1,0 +1,15 @@
+/*Impress*/
+h2 {
+	font-family: 'arial', sans-serif;;
+	text-align: center;
+	transform: translateY(-255px);
+	color: white;
+	font-size: 2.2em;
+}
+
+/*Clases que se añaden en js*/
+.future,
+.past {}
+.step {}
+.active,
+.present {}

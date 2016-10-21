@@ -1,0 +1,16 @@
+/*DIA 1*/
+.fotos { display: flex; flex-wrap: wrap; }
+.fotos div img{ max-width: 450px; }
+
+.effect {
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	opacity: 0;
+	transition: all .3s ease;
+
+	font-size: 2em;
+}
+.aden:hover+.effect {
+	opacity: 1;
+}

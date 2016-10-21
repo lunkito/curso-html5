@@ -1,0 +1,7 @@
+/*DIA 3*/
+.cookie-message {
+	background: white url('../img/cookie (1).png') 4px 4px  no-repeat!important;
+}
+
+.cookie-message p { text-indent: 1.2em; color: #339ff0!important; }
+.cookie-message a { color: #339ff0!important; }
