@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <title>Dia 5</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/dia5.css">
 
-    <!-- JQUERY -->
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- JQUERY 2.2.4 -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!-- IMPRESS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
+    <!-- Impress necesita estar al final del body. ¿Le falta el domcontentloaded a la libreria? -->
 
     <!-- MIO -->
     <script src="js/dia5.js"></script>
@@ -20,26 +21,42 @@
 
   <body>
     <div id="impress">
-      <div class="step">
-        <h1>Presentación en 3D...</h1>
-        <p>¿Quizás?</p>
+      <div class="step" data-x="0">
+        <h1>Presentación en 3D</h1>
+        <p>¿Quizás...?</p>
       </div>
-      <div class="step">
-        <img src="img/pexels-photo.jpg" alt="" />
+      <div class="step" data-x="3000" data-scale="0.5">
+        <img src="img/italian-landscape-mountains-nature.jpg" width="100%;" height="100%" alt=""  />
+        <h2>Diapositiva 2</h2>
       </div>
-      <div class="step">
-        <img src="img/pexels-photo.jpg" alt="" />
+      <div class="step" data-x="6000">
+        <img src="img/pexels-photo (1).jpg" alt="" />
+        <h2>Diapositiva 3</h2>
       </div>
-      <div class="step">
-        <img src="img/pexels-photo.jpg" alt="" />
+      <div class="step" data-x="0" data-y="2000">
+        <img src="img/pexels-photo-29977.jpg" alt="" />
+        <h2>Diapositiva 4</h2>
       </div>
-      <div class="step">
-        <img src="img/pexels-photo.jpg" alt="" />
+      <div class="step" data-x="0" data-y="2000" data-z="2000">
+        <img src="img/pexels-photo-90807.jpeg" alt="" />
+        <h2>Diapositiva 5</h2>
       </div>
-      <div class="step">
+      <div class="step" data-x="6000" data-y="2000">
         <img src="img/pexels-photo.jpg" alt="" />
+        <h2>Diapositiva 6</h2>
+      </div>
+      <div class="step" data-x="6000" data-y="2000" data-rotate-y="180">
+        <img src="img/pexels-photo.jpg" alt="" />
+        <h2>Diapositiva 7</h2>
+      </div>
+      <div class="step" data-x="6000" data-y="4000" data-rotate-y="180" data-rotate-x="90">
+        <img src="img/pexels-photo.jpg" alt="" />
+        <h2>Diapositiva 8</h2>
+      </div>
+      <div id="overview" class="step">
+
       </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.js"></script>
   </body>
 </html>
