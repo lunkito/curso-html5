@@ -1,3 +1,3 @@
-$(document).ready(function() {
-  impress.init();
-});
+document.addEventListener('DOMContentLoaded', function() {
+  impress().init()
+})

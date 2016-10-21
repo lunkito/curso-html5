@@ -23,6 +23,7 @@ $(document).ready(function() {
   }
   new Chartist.Pie('.chart3', dataPie, optionsPie);
 
+
   // JS SEQUENCE DIAGRAMS
   var sample = 'A->B: Perro';
   var sample1 = 'Title: Esto es un título';
@@ -78,6 +79,7 @@ $(document).ready(function() {
     axis: 'x',       // y
     trigger: 'hover' // click
   });
+
 
   // LAZY LOAD
   /*Cosa rara, primero carga la pagina las img y con .ready() salta el unveil(); Se arregla con backend, que no cargue clases de las img*/
