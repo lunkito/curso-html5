@@ -86,16 +86,11 @@ $(document).ready(function() {
 
   /*PhotoSPhereViewer*/
   var PSV = PhotoSphereViewer({
-    panorama: 'https://rawgit.com/lunkito/curso-html5/master/img/panoramica-la-palma.jpg?raw=true',
+    panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/master/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
     container: 'photosphere',
-    loading_img: 'https://rawgit.com/lunkito/curso-html5/master/img/6.gif?raw=true'
+    caption: 'Foto standard',
+    fisheye: 'true',
+    loading_img: 'https://media.giphy.com/media/TtZqlvHid7BjW/giphy.gif',
   });
-
-  // var PSV = PhotoSphereViewer({
-  //   panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/master/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
-  //   container: 'photosphere',
-  //   caption: 'Hola amigos míos',
-  //   loading_img: 'https://media.giphy.com/media/TtZqlvHid7BjW/giphy.gif',
-  // });
 
 });
