@@ -89,7 +89,6 @@ $(document).ready(function() {
     panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/master/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
     container: 'photosphere',
     caption: 'Foto standard',
-    fisheye: 'true',
     loading_img: 'https://media.giphy.com/media/TtZqlvHid7BjW/giphy.gif',
   });
 
