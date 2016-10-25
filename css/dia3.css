@@ -1,7 +1,17 @@
-/*DIA 3*/
+li:first-child { border-bottom: 0; }
+li:nth-child(4) { border-bottom: 3px solid #3af; }
+li:hover { background-color: #3af; border-bottom: 3px solid #3af; }
+li a:hover { color: white; }
+
 .cookie-message {
 	background: white url('../img/cookie (1).png') 4px 4px  no-repeat!important;
 }
 
 .cookie-message p { text-indent: 1.2em; color: #339ff0!important; }
 .cookie-message a { color: #339ff0!important; }
+
+@media (max-width: 900px) {
+  li:first-child { background: inherit; }
+  li:nth-child(4) { border-bottom: 0; background: #3af; }
+	li:hover { background-color: #3af; border-bottom: 0; }
+}

@@ -1,4 +1,8 @@
-/*CHARTIST*/
+li:first-child { border-bottom: 0; }
+li:nth-child(5) { border-bottom: 3px solid #3af; }
+li:hover { background-color: #3af; border-bottom: 3px solid #3af; }
+li a:hover { color: white; }
+
 .chart, .chart2 {
 	width: 600px;
 	height: 400px;
@@ -22,7 +26,7 @@
 }
 
 /*GRAPHVIZ*/
-#graph svg { transform: translate(270px); }
+/*#graph svg { transform: translate(270px); }*/
 
 /*TABLESORT*/
 table { border-collapse: collapse; margin: auto;}
@@ -66,9 +70,20 @@ table th.sort-down::after {
 
 
 /*PANORAMA*/
-
 #photosphere {
 	width: 600px;
 	height: 400px;
 	margin: auto;
+}
+
+@media (max-width: 900px) {
+  li:first-child { background: inherit; }
+  li:nth-child(5) { border-bottom: 0; background: #3af; }
+	li:hover { background-color: #3af; border-bottom: 0; }
+
+	#card,
+	#photosphere,
+	.chart, .chart2 {
+		width: auto;
+	}
 }

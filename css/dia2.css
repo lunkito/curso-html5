@@ -1,4 +1,12 @@
-/*DIA 2*/
+li:first-child { border-bottom: 0; }
+li:nth-child(3) { border-bottom: 3px solid #3af; }
+li:hover { background-color: #3af; border-bottom: 3px solid #3af; }
+li a:hover { color: white; }
+
+h2, p { text-align: center; }
+.articulo { padding-top: 0; }
+p { margin-bottom: 20px;}
+
 .flexi {
   display: flex;
   justify-content: center;
@@ -64,21 +72,19 @@
 /*OUIBOUNCE*/
 #modal-card {
     border: 2px solid #333;
-    margin: 2px auto;
     width:400px;
     padding: 25px;
     box-shadow: 0 0 10px #999;
     background: white;
     text-align: center;
+    position: fixed;
+    top: 140px;
+    left: calc(50vw - 200px);
     display: none;
 }
 
-.modal-background {
-    background: rgba(0, 0, 0, 0.5);;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -5;
+@media (max-width: 900px) {
+  li:first-child { background: inherit; }
+  li:nth-child(3) { border-bottom: 0; background: #3af; }
+	li:hover { background-color: #3af; border-bottom: 0; }
 }

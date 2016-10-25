@@ -1,16 +1,19 @@
-/*DIA 1*/
+li:first-child { border-bottom: 0; }
+li:nth-child(2) { border-bottom: 3px solid #3af; }
+li:hover { background-color: #3af; border-bottom: 3px solid #3af; }
+li a:hover { color: white; }
+
 .fotos { display: flex; flex-wrap: wrap; }
-.fotos div img{ max-width: 450px; }
+.fotos div img{ max-width: 396px; }
 
-.effect {
-	position: absolute;
-	top: 150px;
-	left: 100px;
-	opacity: 0;
-	transition: all .3s ease;
-
-	font-size: 2em;
+@media (max-width: 900px) {
+	.fotos div img {
+		max-width: 100%;
+	}
 }
-.aden:hover+.effect {
-	opacity: 1;
+
+@media (max-width: 900px) {
+	li:first-child { background: inherit; }
+  li:nth-child(2) { border-bottom: 0; background: #3af; }
+	li:hover { background-color: #3af; border-bottom: 0; }
 }
