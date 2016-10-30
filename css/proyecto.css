@@ -8,7 +8,10 @@ body {
 }
 
 p { font-size: 1.4em; }
-h1 { font-size: 2.9em; margin: 0; }
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.9em; margin: 0;
+}
 span {
   font-size: larger;
   border: 1px solid white;
@@ -36,3 +39,14 @@ span {
   background: radial-gradient(ellipse farthest-corner at 500px 200px , #3af 20%, #2362E8 80%) ;
 }
 .overview { opacity: 0; }
+
+/*CountUp*/
+#numero { font-size: 66px; color: #c0fc26; }
+
+/*Accordion*/
+[data-control] {
+    font-size: 1.4em;
+    color: #3af;
+}
+
+.fa-youtube { color: #e52d27; font-size: 50px; }
