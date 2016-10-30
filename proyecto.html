@@ -3,10 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Proyecto</title>
-    <link rel="stylesheet" href="css/proyecto.css">
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/proyecto.js"></script>
+
+    <!-- CountUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
+
+    <!-- Accordion -->
+    <link type="text/css" rel="stylesheet" href="https://rawgit.com/vctrfrnndz/jquery-accordion/master/css/jquery.accordion.css">
+  	<script src="https://rawgit.com/vctrfrnndz/jquery-accordion/master/js/jquery.accordion.js"></script>
+
+    <!-- BUTTONS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/js/buttons.min.js"></script>
+
+    <!-- Zocial buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css">
+
+    <link rel="stylesheet" href="css/proyecto.css">
   </head>
 
   <body>
@@ -16,36 +30,43 @@
         <h1>Bienvenido al cubo 3D</h1>
         <p>Es una presentación en 3D en forma de cubo abierto, dividido en dos partes, la externa en naranja y la interna en azul</p>
         <p>Para moverte a la siguiente cara, pulsa <span>D</span></i> o haz click en cualquier parte de la página</p>
-        <div>1</div>
+        <div>Página 1</div>
       </div>
 
       <div class="step" data-x="" data-y="" data-z="" data-rotate-y="180" data-scale="1">
-        <h1>Hola 2</h1>
-        <div>2</div>
+        <h1>CountUp</h1>
+        <p>¿Te gustan las animaciones? Vamos a animar un número, por ejemplo, mi posible nota en el proyecto :)</p>
+        <p>Para que se vea, pasa el ratón por encima del numero. ¡Ojo! no hagas click, solo pasa el ratón por encima</p>
+        <div id="numero"></div>
+        <p></p>
+        <div>Página 2</div>
       </div>
 
       <div class="step" data-x="1500" data-y="" data-z="-750" data-rotate-y="90" data-scale="1">
         <h1>¡Enhorabuena!</h1>
         <p>Para volver atrás, pulsa <span>A</span></p>
         <p>Pero no te olvides de avanzar a la siguiente!</p>
-        <div>3</div>
+        <div>Página 3</div>
       </div>
 
       <div class="step" data-x="1500" data-y="" data-z="-750" data-rotate-y="-90" data-scale="1">
-        <h1>Hola 4</h1>
-        <div>4</div>
+        <h1>¿Y esos números de página?</h1>
+        <p>Posiblemente te hayas dado cuenta de que las páginas están numeradas, pero van en un orden raro</p>
+        <p>La cara exterior tiene números impares, y la interior números pares</p>
+        <p></p>
+        <div>Página 4</div>
       </div>
 
       <div class="step" data-x="" data-y="" data-z="-1500" data-rotate-y="180" data-scale="1">
         <p>Para intercambiar caras entre externa e interna:</p>
         <p>
-          <span><i class="fa fa-arrow-right"></i></span>  o <span >Espacio</span> para avanzar a la siguiente
+          Pulsa <span><i class="fa fa-arrow-right"></i></span>  o <span >Espacio</span> para avanzar a la siguiente
         </p>
         <p>
-          <span><i class="fa fa-arrow-left"></i></span> para ir a la anterior
+          Pulsa <span><i class="fa fa-arrow-left"></i></span> para ir a la anterior
         </p>
         <p>No te olvides de ir a la siguiente diapositiva para continuar el tutorial</p>
-        <div>5</div>
+        <div>Página 5</div>
       </div>
 
       <div class="step" data-x="" data-y="" data-z="-1500" data-scale="1">
@@ -54,37 +75,82 @@
         <p>Para volver a la anterior externa <span><i class="fa fa-arrow-left"></i></span></p>
         <p>Para la siguiente externa <span><i class="fa fa-arrow-right"></i></span> o <span>Espacio</span></p>
         <p>Para seguir en la cara interna <span>A</i></span> y <span>D</i></span></p>
-        <div>6</div>
+        <p>¡Cuidado! las animaciones pueden despistar. Si pulsas <span>A</span> ¡retrocedes a la derecha!</p>
+        <div>Página 6</div>
       </div>
 
       <div class="step" data-x="-1500" data-y="" data-z="-750" data-rotate-y="-90" data-scale="1">
-        <h1>Hola 7</h1>
-        <div>7</div>
+        <h1>¿Qué encontrarás en el cubo?</h1>
+        <p>En la parte externa algún framework visto en el curso</p>
+        <p>En la parte azul, framworks que no se han visto. Ojo que la página se ha hecho con impress.js, incluida la parte azul :P </p>
+        <div>Página 7</div>
       </div>
 
       <div class="step" data-x="-1500" data-y="" data-z="-750" data-rotate-y="90" data-scale="1">
-        <h1>Hola 8</h1>
-        <div>8</div>
+        <h1>No podía faltar el Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div>Página 8</div>
       </div>
 
       <div class="step" data-x="" data-y="1500" data-z="-750" data-rotate-x="-90" data-scale="1">
-        <h1>Hola 9</h1>
-        <div>9</div>
+        <h1>Botones que no hacen nada!</h1>
+        <div>
+          <button type="button" class="button button-action button-large">Facebook</button>
+  	  		<button type="button" class="button button-action button-rounded button-large">Github</button>
+        </div>
+        <div>
+          <button type="button" class="button button-primary button-large">Twitter</button>
+  	  		<button type="button" class="button button-primary button-rounded button-large">Instagram</button>
+        </div>
+        <div>Página 9</div>
       </div>
 
       <div class="step" data-x="" data-y="1500" data-z="-750" data-rotate-x="90" data-scale="1">
-        <h1>Hola 10</h1>
-        <div>10</div>
+        <h1>Otros botones que no hacen nada</h1>
+        <div>
+          <button class="zocial facebook">Link a Facebook</button>
+          <button class="zocial googleplus">Link a Google</button>
+        </div>
+        <div><button class="zocial twitter">Link a Twitter</button></div>
+        <div>
+          Link inception <i class="fa fa-arrow-right"></i>
+          <button class="zocial linkedin">Link a Linkedin</button>
+        </div>
+
+        <div>Página 10</div>
       </div>
 
       <div class="step" data-x="" data-y="-1500" data-z="-750" data-rotate-x="90" data-scale="1">
-        <h1>Hola 11</h1>
-        <div>11</div>
+        <h1>Lista de frameworks</h1>
+        <p>Si haces click para ver los frameworks, no podrás seguir navegando por las otras diapositivas con el click</p>
+        <p>Tendrás que usar <span>A</span> para avanzar</p>
+        <div id="problit" data-accordion-group>
+            <div class="accordion" data-accordion>
+                <div data-control>Vistos en el curso</div>
+                <div data-content>
+                    <div>Impress.js</div>
+                    <div>Font Awesome</div>
+                    <div>Accordion</div>
+                </div>
+            </div>
+            <div class="accordion" data-accordion>
+                <div data-control>No vistos</div>
+                <div data-content>
+                    <div>Count Up</div>
+                    <div>Zocial Buttons</div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div>Página 11</div>
       </div>
 
       <div class="step" data-x="" data-y="-1500" data-z="-750" data-rotate-x="-90" data-scale="1">
-        <h1>Hola 12</h1>
-        <div>12</div>
+        <h1>Vaya, has llegado al final</h1>
+        <p>Espero que hayas disfrutado del paseo por mi primer cubo en 3D</p>
+        <p>Quedan muchas cosas por hacer y corregir, espero no tardar demasiado. ¡Si te ha gustado dale a like y suscríbete! O no, que no estamos en <i class="fa fa-youtube"></i></p>
+        <div>Página 12</div>
       </div>
 
       <div class="step overview" data-scale="5"></div>
@@ -93,5 +159,6 @@
 
     <!-- IMPRESS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.js"></script>
+    <script src="js/proyecto.js"></script>
   </body>
 </html>
